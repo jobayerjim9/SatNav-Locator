@@ -24,9 +24,11 @@ class Constants {
         var TYPE_COUNTRY: String = "country"
 
         @JvmStatic
-        var RAZORPAY_KEY_ID: String = "rzp_live_gQ9vndFPXi3ARe"
+        var RAZORPAY_KEY_ID: String = ""
+
         @JvmStatic
-        var RAZORPAY_KEY_SECRET: String = "BdYiB3Hzy0zWwcKWQmWFfpjX"
+        var RAZORPAY_KEY_SECRET: String = ""
+
         @JvmStatic
         var SUBS_TYPE: Int = 0
         @JvmStatic
