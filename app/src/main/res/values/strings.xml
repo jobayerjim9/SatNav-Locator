@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">TSC SatNav</string>
+    <string name="placeholder" translatable="false">Placeholder</string>
+
+    <string name="btn_no">No</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_update">Update</string>
+    <string name="facebook_application_id" translatable="false">1908658889288523</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1908658889288523</string>
+    <string name="menu_entries">Satellites</string>
+    <string name="menu_passes">Passes</string>
+    <string name="menu_map">World Map</string>
+    <string name="menu_prefs">Settings</string>
+    <string name="menu_about">Info</string>
+
+    <string name="sources_title">Manage TLE sources</string>
+    <string name="sources_hint">TLE source</string>
+    <string name="sources_https">Protocol HTTPS only</string>
+
+    <string name="entries_update">TLE data update:</string>
+    <string name="entries_search_hint">Name / Id</string>
+    <string name="entries_update_error">Error importing satellite data</string>
+
+    <string name="modes_title">Choose transceiver mode</string>
+
+    <string name="timer_zero" translatable="false">00:00:00</string>
+    <string name="timer_placeholder" translatable="false">-</string>
+
+    <string name="passes_error">No upcoming passes</string>
+
+    <string name="pass_satName" translatable="false">%s</string>
+    <string name="pass_satId" translatable="false">Id:%d</string>
+    <string name="pass_aosAz">AOS - %.1f°</string>
+    <string name="pass_tcaAz">Azimuth: %.1f°</string>
+    <string name="pass_maxEl">MaxElev: %.1f°</string>
+    <string name="pass_losAz">%.1f° - LOS</string>
+    <string name="pass_startTime" translatable="false">HH:mm:ss - EEE</string>
+    <string name="pass_endTime" translatable="false">EEE - HH:mm:ss</string>
+
+    <string name="trans_mode">Mode: %s</string>
+    <string name="trans_no_mode">Mode: null</string>
+    <string name="trans_inverted">Inverted: %s</string>
+    <string name="trans_description" translatable="false">%s</string>
+    <string name="trans_no_link" translatable="false">- - . - -</string>
+    <string name="trans_link_low" translatable="false">%.4f</string>
+    <string name="trans_link_lowHigh" translatable="false">%.4f - %.4f</string>
+    <string name="trans_no_data">No transceivers found for this satellite</string>
+
+    <string name="map_qth">QTH Locator: %s</string>
+    <string name="map_coverage">Coverage: %.0f km</string>
+    <string name="map_copyright" translatable="false">Wikimedia maps | Map data © OpenStreetMap contributors</string>
+
+    <string name="pat_azimuth">Azimuth: %.1f°</string>
+    <string name="pat_elevation">Elevation: %.1f°</string>
+    <string name="pat_distance">Range: %.0f km</string>
+    <string name="pat_altitude">Altitude: %.0f km</string>
+    <string name="pat_osm_idName" translatable="false">Id:%s / %s</string>
+    <string name="pat_osm_lat">Latitude: %.1f°</string>
+    <string name="pat_osm_lon">Longitude: %.1f°</string>
+    <string name="pat_osm_vel">Velocity: %.2f km/s</string>
+
+    <string name="pref_gsp_title">Ground station position</string>
+    <string name="pref_pos_gps">Set position from GPS data</string>
+    <string name="pref_pos_gps_null">Location is switched off</string>
+    <string name="pref_pos_gps_error">Check your location permissions</string>
+    <string name="pref_pos_qth">Set position from QTH locator</string>
+    <string name="pref_pos_qth_error">Invalid QTH locator</string>
+    <string name="pref_pos_success">Position updated successfully</string>
+    <string name="pref_pass_title">Satellite pass preferences</string>
+    <string name="pref_hours_title">Hours ahead</string>
+    <string name="pref_elev_title">Minimal elevation</string>
+    <string name="pref_map_labels_title">Map preferences</string>
+    <string name="pref_map_labels">Use text labels instead of icons</string>
+    <string name="pref_other_title">Other</string>
+    <string name="pref_time_utc_title">Show pass time in UTC</string>
+    <string name="pref_compass_title">Use sensors to rotate PolarView</string>
+
+    <string name="splash_tle_msg">TLE satellite data looses precision over time, so it is
+        recommended to update it every week or so</string>
+    <string name="splash_loc_msg">To get the accurate predictions please set
+        the ground station position via the Settings menu</string>
+
+    <string name="tracking_title">Tracking preferences</string>
+    <string name="tracking_rotator_switch">Antenna rotator control</string>
+    <string name="tracking_rotator_address">Rotator IP address</string>
+    <string name="tracking_rotator_address_invalid">Please enter a valid IP address</string>
+    <string name="tracking_rotator_port">Rotator port</string>
+    <string name="tracking_rotator_port_invalid">Please enter a port between 1024 to 65535</string>
+
+    <string name="info_version">Version: %s</string>
+    <string name="info_subtitle">Satellite Tracker and Pass Predictor</string>
+    <string name="info_github" translatable="false">GitHub</string>
+    <string name="info_fdroid" translatable="false">F-Droid</string>
+    <string name="info_bmc">Buy me a coffee</string>
+    <string name="info_thanks">Huge thanks to:
+        \n— You for downloading and using TSC SatNav! \nMay your sky always be clear!
+        \n\n— <a href="https://www.geekspacelabs.in/">GeekSpace Labs</a> for development and maintenance of TSC SatNav\n
+        \n— <a href="https://www.linkedin.com/in/sankethhuddar/">Sanketh S Huddar,</a> Primary Developer
+        \n— <a href="https://www.linkedin.com/in/svn1998/">Vamshi Sainath,</a> Secondary Developer\n\n
+        \n— <a href="https://github.com/g4dpz">David A. B. Johnson</a> and <a href="https://github.com/davidmoten">Dave Moten</a> for creating predict4java library and making it
+        available under the <a href="https://gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU GPLv2</a> license.
+        \n— <a href="https://github.com/csete">Alexandru Csete</a> for creating Gpredict
+        Sat Tracker that inspired the creation of TSC SatNav.
+        \n— <a href="https://celestrak.com/webmaster.php">Dr T. S. Kelso</a> for maintaining his
+        <a href="https://celestrak.com/">Celestrak</a> website that provides access to the TLE data.
+        \n— <a href="https://libre.space/">Libre Space Foundation</a> for their <a href="https://db.satnogs.org/">SatNOGS</a>
+        API and database providing a huge amount of satellite data used by TSC SatNav.
+        \n— <a href="https://square.github.io/">Square</a> for epic OkHttp, Retrofit and Moshi libs
+        available under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a> license.
+    </string>
+    <string name="info_warranty"><a href="https://sites.google.com/view/look4sat-privacy-policy/home">Privacy Policy</a>
+        \nThis app comes with no warranty. \nSee the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a> license for details.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phonePlaceholder">Phone: %s</string>
+    <string name="aprroveYesPlaceholder">Approved: Yes</string>
+    <string name="aprroveNoPlaceholder">Approved: No</string>
+    <string name="uidPlaceholder">Uid: %s</string>
+    <string name="institutePlaceholder">Institute: %s</string>
+    <string name="chooseInstitute">Choose Institute</string>
+    <string name="chooseCity">Choose City</string>
+    <string name="chooseState">Choose State</string>
+    <string name="chooseCountry">Choose Country</string>
+
+</resources>

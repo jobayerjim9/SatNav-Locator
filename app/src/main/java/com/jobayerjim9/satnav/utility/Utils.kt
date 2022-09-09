@@ -1,4 +1,4 @@
-package com.tsctech.satnav.utility
+package com.jobayerjim9.satnav.utility
 
 import android.content.Context
 import android.util.Log

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_yes">Да</string>
+    <string name="btn_no">Нет</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_update">Обновить</string>
+
+    <string name="menu_entries">Спутники</string>
+    <string name="menu_passes">Пролеты</string>
+    <string name="menu_map">Карта</string>
+    <string name="menu_prefs">Настройки</string>
+    <string name="menu_about">Инфо</string>
+
+    <string name="sources_title">Управление TLE</string>
+    <string name="sources_hint">Источник TLE</string>
+    <string name="sources_https">Только протокол HTTPS</string>
+
+    <string name="entries_update">Обновить спутники:</string>
+    <string name="entries_search_hint">Имя / Номер</string>
+    <string name="entries_update_error">Ошибка обновления спутников</string>
+
+    <string name="modes_title">Выберите модуляцию трансивера</string>
+
+    <string name="passes_error">Нет предстоящих пролётов</string>
+
+    <string name="pass_aosAz">НПС - %.1f°</string>
+    <string name="pass_tcaAz">Азимут: %.1f°</string>
+    <string name="pass_maxEl">МаксЭлев: %.1f°</string>
+    <string name="pass_losAz">%.1f° - КПС</string>
+
+    <string name="trans_mode">Модуляция: %s</string>
+    <string name="trans_no_mode">Модуляция: нет</string>
+    <string name="trans_inverted">Инверсия: %s</string>
+    <string name="trans_no_data">Не найдены трансиверы для этого спутника</string>
+
+    <string name="map_qth">QTH Локатор: %s</string>
+    <string name="map_coverage">Покрытие: %.0fкм</string>
+
+    <string name="pat_azimuth">Азимут: %.1f°</string>
+    <string name="pat_elevation">Элевация: %.1f°</string>
+    <string name="pat_distance">Дистанция: %.0fкм</string>
+    <string name="pat_altitude">Высота: %.0fкм</string>
+    <string name="pat_osm_lat">Широта: %.1f°</string>
+    <string name="pat_osm_lon">Долгота: %.1f°</string>
+    <string name="pat_osm_vel">Скорость: %.2fкм/с</string>
+
+    <string name="pref_gsp_title">Местоположение наземной станции</string>
+    <string name="pref_pos_gps">Установить позицию по данным GPS</string>
+    <string name="pref_pos_gps_null">Местоположение отключено</string>
+    <string name="pref_pos_gps_error">Нет разрешения использовать геоданные</string>
+    <string name="pref_pos_qth">Установить позицию по локатору QTH</string>
+    <string name="pref_pos_qth_error">Неправильный локатор QTH</string>
+    <string name="pref_pos_success">Позиция успешно обновлена</string>
+    <string name="pref_pass_title">Настройки пролетов спутников</string>
+    <string name="pref_hours_title">Количество часов</string>
+    <string name="pref_elev_title">Минимальная элевация</string>
+    <string name="pref_map_labels_title">Настройки карты</string>
+    <string name="pref_map_labels">Использовать текстовые метки</string>
+    <string name="pref_other_title">Другие настройки</string>
+    <string name="pref_compass_title">Использовать компас</string>
+    <string name="pref_time_utc_title">Показывать время пролета по UTC</string>
+
+    <string name="splash_tle_msg">Данные спутников теряют точность со временем, поэтому
+        их рекомендуется обновлять примерно раз в неделю</string>
+    <string name="splash_loc_msg">Чтобы корректно рассчитывать орбиты спутников,
+        установите позицию наземной станции через меню Настройки</string>
+
+    <string name="tracking_title">Настройки слежения</string>
+    <string name="tracking_rotator_switch">Управление поворотным устройством</string>
+    <string name="tracking_rotator_address">IP адрес поворотного устройства</string>
+    <string name="tracking_rotator_address_invalid">Введён неправильный IP адрес</string>
+    <string name="tracking_rotator_port">Порт поворотного устройства</string>
+    <string name="tracking_rotator_port_invalid">Введите порт в диапазоне от 1024 до 65535</string>
+
+    <string name="info_version">Версия: %s</string>
+    <string name="info_subtitle">Трекер спутников для Android</string>
+    <string name="info_bmc">Угостить кофе</string>
+    <string name="info_thanks">Огромное спасибо:
+        \n— Вам за использование этого приложения! \nЖелаю всегда чистого неба над головой!
+        \n— <a href="https://github.com/g4dpz">David A. B. Johnson</a> и
+        <a href="https://github.com/davidmoten">Dave Moten</a> за работу над библиотекой predict4java и
+        открытие доступа к ней по лицензии <a href="https://gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU GPLv2</a>
+        \n— <a href="https://github.com/csete">Alexandru Csete</a> за его замечательную
+        программу Gpredict, которая вдохновила меня на создание Look4Sat.
+        \n— <a href="https://celestrak.com/webmaster.php">Доктору T.S. Kelso</a> за его сайт
+        <a href="https://celestrak.com/">Celestrak</a>, который предоставляет доступ к файлам орбит Two-Line Element.
+        \n— <a href="https://libre.space/">Libre Space Foundation</a> за проект
+        <a href="https://db.satnogs.org/">SatNOGS</a>, API и базу данных с огромным количеством информации о спутниках.
+        \n— <a href="https://square.github.io/">Square</a> за библиотеки OkHttp, Retrofit, Moshi и доступ
+        к ним по лицензии <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></string>
+    <string name="info_warranty"><a href="https://sites.google.com/view/look4sat-privacy-policy/home">Политика конфиденциальности</a>
+        \nЭто ПО поставляется без гарантий. \nПодробности в лицензии <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a>.</string>
+</resources>

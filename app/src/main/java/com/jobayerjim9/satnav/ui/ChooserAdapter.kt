@@ -1,4 +1,4 @@
-package com.tsctech.satnav.ui
+package com.jobayerjim9.satnav.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.tsctech.satnav.R
-import com.tsctech.satnav.databinding.ItemChooserBinding
-import com.tsctech.satnav.utility.SelectItemListener
+import com.jobayerjim9.satnav.R
+import com.jobayerjim9.satnav.databinding.ItemChooserBinding
+import com.jobayerjim9.satnav.utility.SelectItemListener
 
 class ChooserAdapter(private val context: Context,private val names:ArrayList<String>,private val listener:SelectItemListener) :
     RecyclerView.Adapter<ChooserAdapter.ViewHolder>() {

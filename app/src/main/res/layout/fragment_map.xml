@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </org.osmdroid.views.MapView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/map_info_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mapLat"
+            style="@style/MapInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/pat_osm_lat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mapLon"
+            style="@style/MapInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/pat_osm_lon"
+            app:layout_constraintStart_toStartOf="@+id/mapLat"
+            app:layout_constraintTop_toBottomOf="@+id/mapLat" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/qthLocator"
+            style="@style/MapInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/map_qth"
+            app:layout_constraintStart_toStartOf="@+id/mapLon"
+            app:layout_constraintTop_toBottomOf="@+id/mapLon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MapInfoText"
+            android:text="@string/pat_altitude"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/mapLat"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/velocity"
+            style="@style/MapInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pat_osm_vel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/qthLocator"
+            app:layout_constraintEnd_toEndOf="@+id/distance" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/distance"
+            style="@style/MapInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pat_distance"
+            app:layout_constraintBaseline_toBaselineOf="@+id/mapLon"
+            app:layout_constraintEnd_toEndOf="@+id/altitude" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/idName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MapInfoText"
+            android:layout_marginBottom="4dp"
+            android:text="@string/pat_osm_idName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qthLocator" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/fabPrev"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="@dimen/fab_padding"
+        android:layout_marginBottom="@dimen/fab_padding"
+        android:contentDescription="@string/placeholder"
+        android:rotation="180"
+        android:backgroundTint="@color/greySurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_next" />
+
+    <ImageButton
+        android:id="@+id/fabNext"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="@dimen/fab_padding"
+        android:layout_marginBottom="@dimen/fab_padding"
+        android:backgroundTint="@color/greySurface"
+        android:contentDescription="@string/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_next" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/map_copyright"
+        android:textColor="@color/themeLight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

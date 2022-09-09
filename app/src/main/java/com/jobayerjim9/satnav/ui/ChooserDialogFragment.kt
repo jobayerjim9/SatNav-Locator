@@ -1,17 +1,16 @@
-package com.tsctech.satnav.ui
+package com.jobayerjim9.satnav.ui
 
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tsctech.satnav.R
-import com.tsctech.satnav.databinding.FragmentChooserDialogBinding
-import com.tsctech.satnav.utility.SelectItemListener
+import com.jobayerjim9.satnav.R
+import com.jobayerjim9.satnav.databinding.FragmentChooserDialogBinding
+import com.jobayerjim9.satnav.utility.SelectItemListener
 
 
 class ChooserDialogFragment(val type:String, val listener: SelectItemListener,val names:ArrayList<String>) : DialogFragment(),SelectItemListener {

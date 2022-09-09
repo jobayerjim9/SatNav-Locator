@@ -1,4 +1,4 @@
-package com.tsctech.satnav.data.model
+package com.jobayerjim9.satnav.data.model
 
 import com.google.gson.annotations.SerializedName
 

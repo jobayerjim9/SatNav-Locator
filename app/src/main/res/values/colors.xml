@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themeLight">#0062AC</color>
+    <color name="themeDark">#FFCA28</color>
+    <color name="greyDark">#CC000000</color>
+    <color name="greyLight">#D0D0D0</color>
+    <color name="greyDivider">#808080</color>
+    <color name="greySurface">#1e1e1e</color>
+    <color name="mapInfoLayout">#99000000</color>
+    <color name="greyEnable">#595959</color>
+</resources>
